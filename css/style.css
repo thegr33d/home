@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap');
 :root {
     --header-height: 3.5rem;
-  
+
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: rgb(130, 174, 255);
@@ -14,7 +14,7 @@
     --nav-color: hsl(206, 100%, 97%);
     --container-color: hsl(150, 100%, 97%);
     --display: none;
-  
+
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Poppins", sans-serif;
@@ -28,11 +28,11 @@
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
     --width-field: 60%;
-  
+
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-  
+
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -53,7 +53,7 @@
     :root{
         --display: inline-flex;
     }
-    
+
     /**.nav__container{
         display: flex;
     }
@@ -129,20 +129,20 @@ body {
     color: var(--text-color);
     transition: background 0.4s; /* for dark mode animation */
   }
-  
+
   h1, h2, h3 {
     color: var(--title-color);
     font-weight: var(--font-medium);
   }
-  
+
   ul {
     list-style: none;
   }
-  
+
   a {
     text-decoration: none;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
@@ -189,7 +189,7 @@ body {
     z-index: var(--z-fixed);
   }
 .nav__anchors,
-.nav__logo, 
+.nav__logo,
 .nav__toggle,
 .nav__close{
   display: flex;
@@ -241,7 +241,7 @@ body {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
 }
-  
+
 .nav__link{
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -285,11 +285,11 @@ body {
   .header__img{
     min-height:70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(./../img/first.png);
+    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(../img/first.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
   }
 /* =============== button rules ================= */
 .hero-btn{
@@ -321,19 +321,19 @@ body {
 
 /* =================== vecchia pagina =================== */
   /* font-family: tipo,famiglia; */
-  /* ctrl+shif+7 commenta in tutti i linguaggi  
+  /* ctrl+shif+7 commenta in tutti i linguaggi
   footer{
     color: green;
     font-family: Arial,serif;
     font-size: 28px;
     clear: both;
-    /* rispetto agli elementi precedenti il footer assume un posizionamento relativo e non eredita quelli precedenti 
+    /* rispetto agli elementi precedenti il footer assume un posizionamento relativo e non eredita quelli precedenti
     text-align: center;
   }
   p.ciao{
     aggiornamento col display:table: height, margin e width sono obsoleti in quanto contenuti dal div! width: 25%; perchè si allinea a sinistra? /*il motivo è che sei primo un deficiente e secondo il 25% è relativo al section, perciò il 33% del body, dunque con quell'ampiezza non riuscirò a far racchiudere l'intera scritta nel paragrafo
-    margin: 0; 
-    /* height: 25%; 
+    margin: 0;
+    /* height: 25%;
     vertical-align: middle;
     display: table-cell;
   }
