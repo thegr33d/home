@@ -285,7 +285,7 @@ body {
   .header__img{
     min-height:70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(../img/first.png);
+    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(./../img/first.png);
     background-position: center;
     /* background-size: cover;  */
     background-repeat: no-repeat;
@@ -311,7 +311,7 @@ body {
     border: 3px solid #b7b6f3;
     background: #b7b6f3;
     transition: 0.8s;
-    box-shadow: ;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -456,13 +456,12 @@ p{
 .fa-user-group:hover{
     text-shadow: 2px 2px #fff;
 }
-
 /* =========== GIF ========== */
 
 .cta{
     margin:100px auto;
     width: 80%;
-    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(../img/gif.gif);
+    background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(./../img/gif.gif);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
