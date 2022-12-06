@@ -333,7 +333,7 @@ body {
     width: 100%;
     background-image: linear-gradient(rgba(42, 42, 43, 0.534),rgba(42, 42, 43, 0.534)),url(../img/first.png);
     background-position: center;
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     background-attachment: fixed; 
   }
