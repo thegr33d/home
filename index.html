@@ -1,170 +1,137 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"> <!-- codifica dei caratteri -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- SEO parametri-->
-    <title>Responsive Gamestore Website</title>
-    <!-- Fav Icon -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Link To CSS-->
-    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
-    <!-- Box Icons-->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <!-- Swiper Css File Link-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <!-- Nav -->
-        <div class="nav container">
-            <!-- Logo -->
-            <a href="index.hmtl" class="logo">Game<span>Store</span></a>
-            <!-- Nav Icons -->
-            <div class="nav-icons">
-                <i class="bx bx-bell bx-tada" id="bell-icon"><span></span></i>
-                <i class="bx bxs-download" ></i>
-                <div class="menu-icon">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+<html lang="en" dir="ltr">
+  <head> 
+    <!-- ============== font awesome ============ -->
+    <script src="https://kit.fontawesome.com/64670c4152.js" crossorigin="anonymous"></script>
+    <!-- ============== box icons ============ -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"> 
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- float nei siti responsive display inline-block negli stessi dipositivi con diversi monitor-->
+    <!-- il float è ereditario dunque se il titolo no presenta float, la section sì e anche il suo omonimo vorra dire che il primo section si affiancherà al suo contenitore mentre i successivi elementi troveranno la propria posizione affianco agli elementi che avranno definita la proprietà float e tale successione si interromperà qualora un elemento non abbia un float o sia delineata la proprietà clear: both annullando la successione-->
+    <meta charset="utf-8">
+    <title>prova float</title>
+    <!-- appunti: famiglie generichele font sono raggrupati in famiglie e relazioni sono serif, sans-serif, cursive, fantasy -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="img/community.png" alt="logo image">
+                Social Network
+            </a>
+            <div class="nav__container">
+                <a href="#wst" class="nav__anchors">What's That?</a>
+                <a href="#how" class="nav__anchors">How To Install It</a>
+                <a href="#sign_in" class="nav__anchors">Sign In</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home <i class='bx bx-home-alt-2'></i></a> 
+                    </li>
+                    <li class="nav__item">
+                        <a href="#info_n_privacy" class="nav__link">Info And Privacy <i class='bx bx-info-circle' ></i></a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#friends" class="nav__link">Friends <i class='bx bx-group' ></i></a>
+                    </li>
+                </ul>
+                <!-- CLose button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
             </div>
-            <!-- menu-->
-            <div class="menu">
-                <img src="img/menu.png" alt="">
-                <div class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#trending">Trending</a></li>
-                    <li><a href="#new">New Games</a></li>
-                    <li><a href="#action">Action Games</a></li>
-                    <li><a href="#Contact">Contact</a></li>
+
+            <div class="nav__buttons">
+                <!-- Theme chande button -->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-apps-2-line"></i>
                 </div>
             </div>
-            <!-- Notification -->
-            <div class="notification">
-                <div class="notification-box">
-                    <i class='bx bxs-check-circle' ></i>
-                    <p>Congratulation, Your game download successfully</p>
-                </div>
-                <div class="notification-box box-color">
-                    <i class='bx bxs-x-circle' ></i>
-                    <p>Could not apply changes</p>
-                </div>
-            </div>
-        </div>
+        </nav>
+        
     </header>
-    <!-- Home Seletion Start-->
-    <section class="home container" id="home">
-        <img src="img/home.png" alt="">
-        <div class="home-text">
-            <h1>CITY OF THE <br> FUTURE</h1>
-            <a href="#" class="btn">Available Now</a>
+    <section class="header__img">
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="" class="hero-btn">Visit Us To Know More</a>
         </div>
-    </section>
-    <!-- Home Selection End -->
-    <!-- Trending Selection Start -->
-    <section class="container trending" id="trending">
-        <div class="heading">
-            <i class="bx bxs-flame"></i>
-            <h2>Trending Games</h2>
-        </div>
-        <!-- Content -->
-        <div class="trending-content swiper">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="img/trending1.webp" alt="">
-                        <div class="box-text">
-                            <h2>Cyberpunk 2077</h2>
-                            <h3>Action</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <i class="bx bxs-star"></i>
-                                    <span>4.7</span>
-                                </div>
-                                <a href="" class="box-btn"><i class="bx bx-down"></i>-arrow-alt</a>
-                            </div>
-                        </div>
-                    </div>
+        </section>
+    <!-- <div>
+      <section id="sx">
+        Seleziona Sinistra
+      </section>
+      <section id="dx">
+        Seleziona Destra
+      </section>
+    </div>
+    <div>-->
+        <section class="course" id="wst">
+            <h1>Course We Offer</h1>
+            <p>Sit Down, and admire our awful beautifulness</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia rem quisquam eos, eaque nemo, corrupti omnis, reprehenderit ducimus tenetur quo reiciendis nihil totam numquam ipsa excepturi consectetur quis. Hic.</p>
                 </div>
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="img/trending1.webp" alt="">
-                        <div class="box-text">
-                            <h2>Cyberpunk 2077</h2>
-                            <h3>Action</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <i class="bx bxs-star"></i>
-                                    <span>4.7</span>
-                                </div>
-                                <a href="" class="box-btn"><i class="bx bx-down-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia rem quisquam eos, eaque nemo, corrupti omnis, reprehenderit ducimus tenetur quo reiciendis nihil totam numquam ipsa excepturi consectetur quis. Hic.</p>
                 </div>
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="img/trending1.webp" alt="">
-                        <div class="box-text">
-                            <h2>Cyberpunk 2077</h2>
-                            <h3>Action</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <i class="bx bxs-star"></i>
-                                    <span>4.7</span>
-                                 </div>
-                               <a href="" class="box-btn"><i class="bx bx-down-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 4 -->
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="img/trending1.webp" alt="">
-                        <div class="box-text">
-                            <h2>Cyberpunk 2077</h2>
-                            <h3>Action</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <i class="bx bxs-star"></i>
-                                    <span>4.7</span>
-                                 </div>
-                               <a href="" class="box-btn"><i class="bx bx-down-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide 5 -->
-                <div class="swiper-slide">
-                    <div class="box">
-                        <img src="img/trending1.webp" alt="">
-                        <div class="box-text">
-                            <h2>Cyberpunk 2077</h2>
-                            <h3>Action</h3>
-                            <div class="rating-download">
-                                <div class="rating">
-                                    <i class="bx bxs-star"></i>
-                                    <span>4.7</span>
-                                 </div>
-                               <a href="" class="box-btn"><i class="bx bx-down-arrow-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="course-col">
+                    <h3>Post Graduation</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore officia rem quisquam eos, eaque nemo, corrupti omnis, reprehenderit ducimus tenetur quo reiciendis nihil totam numquam ipsa excepturi consectetur quis. Hic.</p>
                 </div>
             </div>
+        </section >
+        <a id="how" style="visibility: hidden">Check</a>
+        <section class="cta">
+            <h1>Enrol For Our Carius Online Courses<br>Anywhere From The World</h1>
+            <a href="" class="hero-btn">CONTACT US</a>
+        </section>
+    
+<div class="container--field" id="sign_in">
+    <section class="field">
+        <div class="div__things">
+
         </div>
     </section>
-    <!-- Trending Selection End -->
-    <!-- Link Swiper File -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Link to JS-->
-    <script src="js/main.js"></script>
-</body>
+    <section class="field">
+        <div class="div__to_fill">
+            <form action="pagina" method="GET">
+                <label>
+                    <i class='bx bx-user-circle' ></i> username:
+                </label>
+                <input type="text"></input><br>
+                <label>
+                    <i class='bx bxs-key'></i> password:
+                </label>
+                <input type="text"></input><br>
+                <input type="submit" value="submit" class="hero-btn_input">
+            </form>
+        </div>
+    </section>
+    </div>
+    <!-- </div> -->
+    <footer>
+      <section class="footer" id="info_n_privacy">
+        <div class="footer__field">
+            <h3 class="information">Contants</h3>
+            <p class="information">Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br>Dolorum, neque eius porro veniam consectetur voluptas ut adipisci atque tempora iure. Quibusdam in ipsam dicta eum quod dolorum non, perferendis quis.</p>
+        </div>
+        <div class="footer__field">
+            <h3 class="information">Our policy and Register Office</h3>
+            <p class="information">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Eius officia a facilis blanditiis, accusamus aut ducimus dicta possimus quo veritatis eum voluptas provident sit iusto consequuntur expedita? Sequi, dolores hic.</p>
+        </div>
+      </section>
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="js/javscr.js"></script>
+  </body>
 </html>
