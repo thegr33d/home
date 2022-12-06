@@ -50,7 +50,7 @@
   }
 
 
-  @media only screen and (min-width: 834px){
+  @media only screen and (min-width: 896px){
     :root{
         --display: inline-flex;
         --width-field: 100%;
@@ -526,6 +526,11 @@ p{
         font-size: 24px;
     }
 }
+@media only screen and (min-width: 896px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
 .field{
     display: flex;
     width: var(--width-field);
@@ -637,6 +642,14 @@ p{
 }
 
 @media(max-width:834px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer__field{
+        width: 90%;
+    }
+}
+@media only screen and (min-width: 896px){
     .footer{
         flex-direction: column;
     }
