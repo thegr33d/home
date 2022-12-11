@@ -686,8 +686,6 @@ footer{
     text-align: justify;
 }
 .information{
-    font-weight:var(--font-medium);
-    font-family: var(--body-font);
     display: block;
     color: #b7b6f3;
 }
@@ -1003,6 +1001,9 @@ article.cta__images_try{
     .cta__images_try{
         width: 70%;
     }
+    .cta{
+        background-attachment:unset;
+    }
     .carousell__cta{
         flex-direction: column;
     }
@@ -1019,6 +1020,10 @@ article.cta__images_try{
     }
     .footer__field{
         width: 90%;
+    }
+    .footer__field p {
+        color: var(--second-color);
+        font-size: var(--smaller-font-size);
     }
 }
 
