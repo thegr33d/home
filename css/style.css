@@ -930,7 +930,7 @@ article.cta__images_try{
     }
 
     .header__img{
-        min-height: 36vh;
+        min-height: 52vh; /*36*/
         background-position: top;
         /*non posso scegliere dove posizionare lo sfondo con background-position-x ed y;*/
     }
