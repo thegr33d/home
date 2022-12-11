@@ -937,6 +937,10 @@ article.cta__images_try{
         /*non posso scegliere dove posizionare lo sfondo con background-position-x ed y;*/
     }
 
+    .header__img p{
+        font-size: var(--small-font-size);
+    }
+
     .text-box{
         top:21%;
     }
